@@ -1,5 +1,6 @@
 # coding=utf-8
 import os
+import time
 from queue import Queue
 from threading import Thread
 
@@ -100,7 +101,6 @@ class ProxyPool:
             return False
 
     def get_proxy_task(self):
-        import time
         time.sleep(10)
         task_list = []
         while not self.check_ip_queue.empty():
