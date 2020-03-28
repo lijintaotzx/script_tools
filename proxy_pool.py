@@ -1,8 +1,8 @@
 # coding=utf-8
+import os
 from queue import Queue
 from threading import Thread
 
-import os
 import requests
 from fake_useragent import UserAgent
 from lxml import etree
